@@ -38,7 +38,7 @@
 
 <!-- SOBRE MIM -->
 <section id="sobre">
-    <div class="container">
+    <div class="container glass">
         <h2 class="text-center mb-4" data-aos="fade-up">Sobre Mim</h2>
         <p class="lead text-center" data-aos="fade-up">
             Sou um desenvolvedor em formação. Buscando sempre aprender e evoluir como profissional.
@@ -66,8 +66,8 @@
 </section>
 
 <!-- PROJETOS -->
-<section id="projetos" class="bg-light">
-    <div class="container">
+<section id="projetos">
+    <div class="container glass">
         <h2 class="text-center mb-4" data-aos="fade-up">Projetos</h2>
 
         <div class="row">
@@ -102,7 +102,7 @@
 
 <!-- EXPERIÊNCIA -->
 <section id="experiencia">
-    <div class="container">
+    <div class="container glass">
         <h2 class="text-center mb-4" data-aos="fade-up">Experiência & Formação</h2>
 
         <div data-aos="fade-up">
@@ -131,7 +131,7 @@
 </section>
 
 <!-- CONTATO -->
-<section id="contato" class="bg-light">
+<section id="contato">
     <div class="container">
         <h2 class="text-center mb-4" data-aos="fade-up">Contato</h2>
 
