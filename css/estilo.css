@@ -123,3 +123,57 @@ footer {
     padding: 25px;
     color: #d8e7ff;
 }
+#skills img {
+    filter: drop-shadow(0px 0px 6px rgba(255,255,255,0.3));
+    transition: 0.3s;
+}
+
+#skills img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 10px rgba(0,212,255,0.7));
+}
+#redes img {
+    filter: drop-shadow(0px 0px 6px rgba(255,255,255,0.3));
+    transition: 0.3s;
+}
+
+#redes img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 10px rgba(0,212,255,0.7));
+}
+.skill-card,
+.project-card,
+.info-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.skill-card:hover,
+.project-card:hover,
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.skill-card img {
+    transition: 0.3s;
+}
+
+.skill-card img:hover {
+    transform: scale(1.1);
+}
+
+.project-card a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}

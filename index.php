@@ -36,6 +36,49 @@
     <p data-aos="fade-up" data-aos-delay="300">"Frase motivacional"</p>
 </section>
 
+<!-- ESPECIALIDADES -->
+<section id="skills">
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Especialidades</h2>
+
+        <div class="row justify-content-center">
+
+            <!-- HTML -->
+            <div class="col-md-3 col-6 mb-4">
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="60">
+                    <h5 class="mt-2 text-center">HTML5</h5>
+                </div>
+            </div>
+
+            <!-- CSS -->
+            <div class="col-md-3 col-6 mb-4">
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="60">
+                    <h5 class="mt-2 text-center">CSS3</h5>
+                </div>
+            </div>
+
+            <!-- PHP -->
+            <div class="col-md-3 col-6 mb-4">
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="60">
+                    <h5 class="mt-2 text-center">PHP</h5>
+                </div>
+            </div>
+
+            <!-- MySQL -->
+            <div class="col-md-3 col-6 mb-4">
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="60">
+                    <h5 class="mt-2 text-center">MySQL</h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <!-- SOBRE MIM -->
 <section id="sobre">
     <div class="container glass">
@@ -67,32 +110,35 @@
 
 <!-- PROJETOS -->
 <section id="projetos">
-    <div class="container glass">
-        <h2 class="text-center mb-4" data-aos="fade-up">Projetos</h2>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Projetos</h2>
 
-        <div class="row">
+        <div class="row justify-content-center">
 
             <!-- Projeto 1 -->
-            <div class="col-md-6 mb-4" data-aos="fade-right">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h3>Volta ao Mundo</h3>
-                        <p>Projeto especial que apresenta países, fotos, bandeiras e informações utilizando API REST.</p>
-                        <p><strong>Tecnologias:</strong> HTML, CSS, JS</p>
-                        <a href="#" target="_blank" class="btn btn-primary">Repositório no GitHub</a>
-                    </div>
+            <div class="col-md-4 col-12 mb-4">
+                <div class="project-card">
+                    <h4>Nome do Projeto 1</h4>
+                    <p>Descrição breve do projeto...</p>
+                    <a href="#" target="_blank">Ver projeto</a>
                 </div>
             </div>
 
             <!-- Projeto 2 -->
-            <div class="col-md-6 mb-4" data-aos="fade-left">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h3>Lorem</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p><strong>Tecnologias:</strong> PHP, MySQL</p>
-                        <a href="#" target="_blank" class="btn btn-primary">Repositório no GitHub</a>
-                    </div>
+            <div class="col-md-4 col-12 mb-4">
+                <div class="project-card">
+                    <h4>Nome do Projeto 2</h4>
+                    <p>Outra descrição curta...</p>
+                    <a href="#" target="_blank">Ver projeto</a>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4 col-12 mb-4">
+                <div class="project-card">
+                    <h4>Nome do Projeto 3</h4>
+                    <p>Mais uma descrição...</p>
+                    <a href="#" target="_blank">Ver projeto</a>
                 </div>
             </div>
 
@@ -100,32 +146,58 @@
     </div>
 </section>
 
-<!-- EXPERIÊNCIA -->
+<!-- EXPERIÊNCIA / FORMAÇÃO -->
 <section id="experiencia">
-    <div class="container glass">
-        <h2 class="text-center mb-4" data-aos="fade-up">Experiência & Formação</h2>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Experiência & Formação</h2>
 
-        <div data-aos="fade-up">
-            <h4>Formação Acadêmica</h4>
-            <p><strong>Técnico em Desenvolvimento de Sistemas</strong> — ETEC João Maria Stevanatto (2020-2022)</p>
+        <div class="row justify-content-center">
+
+            <!-- Experiência Profissional -->
+            <div class="col-md-5 col-12 mb-4">
+                <div class="info-card">
+                    <h4>Experiência Profissional</h4>
+                    <p>Adicione aqui sua experiência profissional, empresa, período e responsabilidades.</p>
+                </div>
+            </div>
+
+            <!-- Formação -->
+            <div class="col-md-5 col-12 mb-4">
+                <div class="info-card">
+                    <h4>Formação</h4>
+                    <p>Adicione aqui sua formação acadêmica, cursos, certificações etc.</p>
+                </div>
+            </div>
+
         </div>
+    </div>
+</section>
 
-        <div class="mt-4" data-aos="fade-up" data-aos-delay="150">
-            <h4>Experiência Profissional</h4>
-            <p><strong>Menor Aprendiz</strong> — Cristália Produtos Químicos e Farmacêuticos</p>
-            <p>Atividades: bla bla bla</p>
+<!-- REDES SOCIAIS -->
+<section id="redes">
+    <div class="container glass mt-5" data-aos="fade-up">
 
-            <p><strong>Assistente de Licitações</strong> — Cristália Produtos Químicos e Farmacêuticos</p>
-            <p>Atividades: bla bla bla</p>
-        </div>
+        <h2 class="text-center mb-4">Minhas Redes</h2>
+        <p class="text-center mb-4">Você também pode me encontrar aqui:</p>
 
-        <div class="mt-4" data-aos="fade-up" data-aos-delay="300">
-            <h4>Cursos Complementares</h4>
-            <ul>
-                <li>AIPA</li>
-                <li>Bla Bla Bla</li>
-                <li>Bla bla bla</li>
-            </ul>
+        <div class="row justify-content-center text-center">
+
+            <!-- LINKEDIN -->
+            <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                <a href="https://www.linkedin.com/in/SEU-LINK" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="70">
+                    <h5 class="mt-2">LinkedIn</h5>
+                </a>
+            </div>
+
+            <!-- GITHUB -->
+            <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <a href="https://github.com/SEU-USUARIO" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="70" style="filter: invert(1);">
+                    <h5 class="mt-2">GitHub</h5>
+                </a>
+            </div>
+
         </div>
     </div>
 </section>
