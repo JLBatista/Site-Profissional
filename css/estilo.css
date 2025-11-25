@@ -1,8 +1,10 @@
-/* ======== BODY: Fundo abstrato + estilo premium ======== */
+/* =====================================
+   BODY — Fundo abstrato animado
+===================================== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #b82b2b, #111174, #960b81);
+    background: linear-gradient(135deg, #161515, #47474a, #9f9c9f);
     background-attachment: fixed;
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -10,14 +12,15 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Animação do fundo */
 @keyframes gradient {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-/* ======== GLASSMORPHISM (Cards e seções) ======== */
+/* =====================================
+   GLASSMORPHISM (Somente onde usado)
+===================================== */
 .glass {
     background: rgba(255, 255, 255, 0.08);
     border-radius: 16px;
@@ -28,7 +31,9 @@ body {
     padding: 25px;
 }
 
-/* ======== NAVBAR GLASS ======== */
+/* =====================================
+   NAVBAR
+===================================== */
 header {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(12px);
@@ -53,38 +58,129 @@ nav a:hover {
     color: #00d4ff;
 }
 
-/* ======== HERO ======== */
+/* =====================================
+   HERO — Layout dividido
+===================================== */
 .hero {
-    padding: 140px 20px 80px;
-    text-align: center;
+    padding: 140px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.hero .col-md-6:first-child {
+    display: flex;
+    justify-content: center;
 }
 
-.perfil {
-    width: 180px;
-    border-radius: 50%;
-    border: 4px solid rgba(255,255,255,0.5);
-    margin-bottom: 20px;
+.perfil-home {
+    width: 100%;               
+    max-width: 420px;           
+    border-radius: 18px;
+    border: 4px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 25px rgba(0, 234, 255, 0.25);
+    object-fit: cover;          
+}
+.titulo-home {
+    font-size: 2.8rem;
+    font-weight: bold;
 }
 
-/* ======== SEÇÕES ======== */
+.titulo-home span {
+    color: #00eaff;
+}
+
+.subtitulo-home {
+    font-size: 1.6rem;
+    color: #dcdcdc;
+}
+
+.frase-home {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #b5b5b5;
+    font-style: italic;
+}
+
+/* Responsivo HERO */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+    .titulo-home {
+        font-size: 2.2rem;
+    }
+    .subtitulo-home {
+        font-size: 1.3rem;
+    }
+    .perfil-home {
+        max-width: 300px; /* Não deixa a foto gigante no celular */
+    }
+}
+
+/* =====================================
+   SEÇÕES GERAIS
+===================================== */
 section {
     padding: 80px 0;
 }
 
-.secao {
-    max-width: 1000px;
-    margin: 60px auto;
+/* =====================================
+   SKILLS — imagens e cards
+===================================== */
+.skill-card,
+.project-card,
+.info-card {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
 }
 
-/* ======== CARDS DE PROJETOS ======== */
-.card {
-    background: rgba(255, 255, 255, 0.08) !important;
-    border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    backdrop-filter: blur(10px);
-    color: #fff;
+.skill-card:hover,
+.project-card:hover,
+.info-card:hover {
+    transform: translateY(-6px);
+    border-color: #00eaff;
+    box-shadow: 0 0 10px rgba(0, 234, 255, 0.4);
 }
 
-/* Botões */
+.skill-card img {
+    transition: 0.3s;
+}
+
+.skill-card img:hover {
+    transform: scale(1.07);
+}
+
+/* brilho das imagens de skills */
+#skills img {
+    filter: drop-shadow(0px 0px 6px rgba(255,255,255,0.3));
+    transition: 0.3s;
+}
+
+#skills img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 10px rgba(0,212,255,0.7));
+}
+
+/* =====================================
+   REDES SOCIAIS
+===================================== */
+#redes img {
+    filter: drop-shadow(0px 0px 6px rgba(255,255,255,0.3));
+    transition: 0.3s;
+}
+
+#redes img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 10px rgba(0,212,255,0.7));
+}
+
+/* =====================================
+   BOTÕES
+===================================== */
 .btn-primary {
     background: #4fa3ff;
     border: none;
@@ -94,15 +190,9 @@ section {
     background: #00d4ff;
 }
 
-/* ======== FORM CONTATO ======== */
-form {
-    color: black;
-}
-
-form.glass {
-    color: #fff !important;
-}
-
+/* =====================================
+   FORMULÁRIO
+===================================== */
 input, textarea {
     background: rgba(255,255,255,0.2) !important;
     border: 1px solid rgba(255,255,255,0.3) !important;
@@ -113,7 +203,9 @@ input::placeholder, textarea::placeholder {
     color: #ddd;
 }
 
-/* ======== FOOTER GLASS ======== */
+/* =====================================
+   FOOTER
+===================================== */
 footer {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(12px);
@@ -122,58 +214,4 @@ footer {
     text-align: center;
     padding: 25px;
     color: #d8e7ff;
-}
-#skills img {
-    filter: drop-shadow(0px 0px 6px rgba(255,255,255,0.3));
-    transition: 0.3s;
-}
-
-#skills img:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(0px 0px 10px rgba(0,212,255,0.7));
-}
-#redes img {
-    filter: drop-shadow(0px 0px 6px rgba(255,255,255,0.3));
-    transition: 0.3s;
-}
-
-#redes img:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(0px 0px 10px rgba(0,212,255,0.7));
-}
-.skill-card,
-.project-card,
-.info-card {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
-    border-radius: 12px;
-    padding: 25px;
-    text-align: center;
-    transition: 0.3s;
-    border: 1px solid rgba(255,255,255,0.2);
-}
-
-.skill-card:hover,
-.project-card:hover,
-.info-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
-}
-
-.skill-card img {
-    transition: 0.3s;
-}
-
-.skill-card img:hover {
-    transform: scale(1.1);
-}
-
-.project-card a {
-    color: #00d4ff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.project-card a:hover {
-    text-decoration: underline;
 }

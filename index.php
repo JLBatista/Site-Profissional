@@ -29,17 +29,30 @@
 </header>
 
 <!-- HOME -->
-<section id="home" class="hero">
-    <img src="img/perfil.jpg" alt="Foto de Perfil" class="perfil" data-aos="zoom-in">
-    <h1 data-aos="fade-up">Olá! Sou <span style="color:#4fa3ff;">João Lucas</span></h1>
-    <h2 data-aos="fade-up" data-aos-delay="150">Futuro Desenvolvedor de Sistemas</h2>
-    <p data-aos="fade-up" data-aos-delay="300">"Frase motivacional"</p>
+<section id="home" class="hero d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- FOTO -->
+            <div class="col-md-6 text-center" data-aos="fade-right">
+                <img src="imagens/foto-profissional.jpg" alt="Foto de Perfil" class="perfil-home">
+            </div>
+
+            <!-- TEXTOS -->
+            <div class="col-md-6" data-aos="fade-left">
+                <h1 class="titulo-home">Olá! Sou <span>João Lucas</span></h1>
+                <h2 class="subtitulo-home">Futuro Desenvolvedor de Sistemas</h2>
+                <p class="frase-home">"Frase motivacional"</p>
+            </div>
+
+        </div>
+    </div>
 </section>
 
 <!-- ESPECIALIDADES -->
 <section id="skills">
     <div class="container mt-5">
-        <h2 class="text-center mb-4">Especialidades</h2>
+        <h2 class="text-center mb-4">Skills</h2>
 
         <div class="row justify-content-center">
 
@@ -81,8 +94,9 @@
 
 <!-- SOBRE MIM -->
 <section id="sobre">
-    <div class="container glass">
+    <div class="container info-card">
         <h2 class="text-center mb-4" data-aos="fade-up">Sobre Mim</h2>
+
         <p class="lead text-center" data-aos="fade-up">
             Sou um desenvolvedor em formação. Buscando sempre aprender e evoluir como profissional.
         </p>
@@ -175,7 +189,7 @@
 
 <!-- REDES SOCIAIS -->
 <section id="redes">
-    <div class="container glass mt-5" data-aos="fade-up">
+    <div class="container info-card" data-aos="fade-up">
 
         <h2 class="text-center mb-4">Minhas Redes</h2>
         <p class="text-center mb-4">Você também pode me encontrar aqui:</p>
