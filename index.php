@@ -143,40 +143,60 @@
 
 <!-- PROJETOS -->
 <section id="projetos">
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">Projetos</h2>
+    <div class="row mt-4">
 
-        <div class="row justify-content-center">
-
-            <!-- Projeto 1 -->
-            <div class="col-md-4 col-12 mb-4">
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <h4>Nome do Projeto 1</h4>
-                    <p>Descrição breve do projeto...</p>
-                    <a href="#" target="_blank">Ver projeto</a>
-                </div>
+    <!-- Projeto 1 -->
+    <div class="col-md-4 col-12 mb-4">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+                <i class="bi bi-journal-code"></i>
             </div>
-
-            <!-- Projeto 2 -->
-            <div class="col-md-4 col-12 mb-4">
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <h4>Nome do Projeto 2</h4>
-                    <p>Outra descrição curta...</p>
-                    <a href="#" target="_blank">Ver projeto</a>
-                </div>
-            </div>
-
-            <!-- Projeto 3 -->
-            <div class="col-md-4 col-12 mb-4">
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <h4>Nome do Projeto 3</h4>
-                    <p>Mais uma descrição...</p>
-                    <a href="#" target="_blank">Ver projeto</a>
-                </div>
-            </div>
-
+            <h4>PI 2º Semestre — Hora+</h4>
+            <p>
+                Plataforma para gerenciamento e solicitação de HAEs dos docentes da FATEC,
+                tornando o processo mais ágil e organizado.
+            </p>
+            <a href="https://github.com/JLBatista/PI-Segundo-Semestre" target="_blank">
+                Ver projeto <i class="bi bi-arrow-right"></i>
+            </a>
         </div>
     </div>
+
+    <!-- Projeto 2 -->
+    <div class="col-md-4 col-12 mb-4">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="icon-box">
+                <i class="bi bi-globe-americas"></i>
+            </div>
+            <h4>Volta ao Mundo — Marrocos</h4>
+            <p>
+                Site informativo sobre o Marrocos, com dados culturais, turísticos
+                e curiosidades, utilizando layout moderno e responsivo.
+            </p>
+            <a href="https://github.com/JLBatista/Projeto-Volta-ao-Mundo" target="_blank">
+                Ver projeto <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Projeto 3 -->
+    <div class="col-md-4 col-12 mb-4">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+                <i class="bi bi-water"></i>
+            </div>
+            <h4>PI 3º Semestre — Aquasense</h4>
+            <p>
+                Sistema de monitoramento de rios com alertas em caso de risco de
+                alagamento, utilizando sensores IoT e dados em tempo real.
+            </p>
+            <a href="https://github.com/P-i-Aquasensee/PI-3-Semestre" target="_blank">
+                Ver projeto <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+</div>
 </section>
 
 <!-- EXPERIÊNCIA / FORMAÇÃO -->
