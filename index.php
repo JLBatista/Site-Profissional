@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/estilo.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     
 </head>
 <body>
@@ -54,7 +56,26 @@
             <div class="col-md-6" data-aos="fade-left">
                 <h1 class="titulo-home">Olá! Sou <span>João Lucas</span></h1>
                 <h2 class="subtitulo-home">Futuro Desenvolvedor de Sistemas</h2>
-                <p class="frase-home">"Frase motivacional"</p>
+                <p class="frase-home">"O talento vence jogos, mas o trabalho em equipe ganha campeonatos" Michael Jordan</p>
+
+                <!-- REDES EM BOLAS -->
+                <div class="d-flex gap-3 mt-3">
+
+                    <!-- LINKEDIN -->
+                    <a href="https://www.linkedin.com/in/lucas-altafini/" 
+                       target="_blank" 
+                       class="rede-ball">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
+                    </a>
+
+                    <!-- GITHUB -->
+                    <a href="https://github.com/JLBatista" 
+                       target="_blank" 
+                       class="rede-ball">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+                    </a>
+
+                </div>
             </div>
 
         </div>
@@ -107,6 +128,7 @@
 <!-- SOBRE MIM -->
 <section id="sobre">
    <div class="row mt-5 justify-content-center">
+    <h2 class="text-center mb-4">Informações complementares</h2>
 
     <!-- CARD 1 — SOBRE -->
     <div class="col-md-5 col-12 mb-4" data-aos="fade-right">
@@ -144,60 +166,90 @@
 <!-- PROJETOS -->
 <section id="projetos">
     <div class="row mt-4">
+        <h2 class="text-center mb-4">Projetos</h2>
+        <!-- Projeto 1 -->
+        <div class="col-md-4 col-12 mb-4">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-box">
+                    <i class="bi bi-journal-code"></i>
+                </div>
 
-    <!-- Projeto 1 -->
-    <div class="col-md-4 col-12 mb-4">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-                <i class="bi bi-journal-code"></i>
+                <h4>PI 2º Semestre — Hora+</h4>
+                <p>
+                    Plataforma para gerenciamento e solicitação de HAEs dos docentes da FATEC,
+                    tornando o processo mais ágil e organizado.
+                </p>
+
+                <!-- TAGS TECNOLÓGICAS -->
+                <div class="tech-tags">
+                    <span><i class="devicon-html5-plain colored"></i> HTML</span>
+                    <span><i class="devicon-css3-plain colored"></i> CSS</span>
+                    <span><i class="devicon-php-plain colored"></i> PHP</span>
+                    <span><i class="devicon-mysql-original colored"></i> MySQL</span>
+                </div>
+
+                <a href="https://github.com/JLBatista/PI-Segundo-Semestre" target="_blank">
+                    Ver projeto <i class="bi bi-arrow-right"></i>
+                </a>
             </div>
-            <h4>PI 2º Semestre — Hora+</h4>
-            <p>
-                Plataforma para gerenciamento e solicitação de HAEs dos docentes da FATEC,
-                tornando o processo mais ágil e organizado.
-            </p>
-            <a href="https://github.com/JLBatista/PI-Segundo-Semestre" target="_blank">
-                Ver projeto <i class="bi bi-arrow-right"></i>
-            </a>
         </div>
-    </div>
 
-    <!-- Projeto 2 -->
-    <div class="col-md-4 col-12 mb-4">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="150">
-            <div class="icon-box">
-                <i class="bi bi-globe-americas"></i>
+        <!-- Projeto 2 -->
+        <div class="col-md-4 col-12 mb-4">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="icon-box">
+                    <i class="bi bi-globe-americas"></i>
+                </div>
+
+                <h4>Volta ao Mundo — Marrocos</h4>
+                <p>
+                    Site informativo sobre o Marrocos, com dados culturais, turísticos
+                    e curiosidades, utilizando layout moderno e responsivo.
+                </p>
+
+                <!-- TAGS TECNOLÓGICAS -->
+                <div class="tech-tags">
+                    <span><i class="devicon-html5-plain colored"></i> HTML</span>
+                    <span><i class="devicon-css3-plain colored"></i> CSS</span>
+                </div>
+
+                <a href="https://github.com/JLBatista/Projeto-Volta-ao-Mundo" target="_blank">
+                    Ver projeto <i class="bi bi-arrow-right"></i>
+                </a>
             </div>
-            <h4>Volta ao Mundo — Marrocos</h4>
-            <p>
-                Site informativo sobre o Marrocos, com dados culturais, turísticos
-                e curiosidades, utilizando layout moderno e responsivo.
-            </p>
-            <a href="https://github.com/JLBatista/Projeto-Volta-ao-Mundo" target="_blank">
-                Ver projeto <i class="bi bi-arrow-right"></i>
-            </a>
         </div>
-    </div>
 
-    <!-- Projeto 3 -->
-    <div class="col-md-4 col-12 mb-4">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box">
-                <i class="bi bi-water"></i>
+        <!-- Projeto 3 -->
+        <div class="col-md-4 col-12 mb-4">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                    <i class="bi bi-water"></i>
+                </div>
+
+                <h4>PI 3º Semestre — Aquasense</h4>
+                <p>
+                    Sistema de monitoramento de rios com alertas em caso de risco de
+                    alagamento, utilizando sensores IoT e dados em tempo real.
+                </p>
+
+                <!-- TAGS TECNOLÓGICAS -->
+                <div class="tech-tags">
+                    <span><i class="devicon-php-plain colored"></i> PHP</span>
+                    <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                    <span><i class="devicon-mysql-original colored"></i> MySQL</span>
+                    <span><i class="devicon-arduino-plain colored"></i> Arduino</span>
+                </div>
+
+                <a href="https://github.com/P-i-Aquasensee/PI-3-Semestre" target="_blank">
+                    Ver projeto <i class="bi bi-arrow-right"></i>
+                </a>
             </div>
-            <h4>PI 3º Semestre — Aquasense</h4>
-            <p>
-                Sistema de monitoramento de rios com alertas em caso de risco de
-                alagamento, utilizando sensores IoT e dados em tempo real.
-            </p>
-            <a href="https://github.com/P-i-Aquasensee/PI-3-Semestre" target="_blank">
-                Ver projeto <i class="bi bi-arrow-right"></i>
-            </a>
         </div>
-    </div>
 
-</div>
+    </div>
 </section>
+
+
 
 <!-- EXPERIÊNCIA / FORMAÇÃO -->
 <section id="experiencia">
@@ -263,34 +315,6 @@
     </div>
 </section>
 
-<!-- REDES SOCIAIS -->
-<section id="redes">
-    <div class="container info-card" data-aos="fade-up">
-
-        <h2 class="text-center mb-4">Minhas Redes</h2>
-        <p class="text-center mb-4">Você também pode me encontrar aqui:</p>
-
-        <div class="row justify-content-center text-center">
-
-            <!-- LINKEDIN -->
-            <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
-                <a href="https://www.linkedin.com/in/SEU-LINK" target="_blank">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="70">
-                    <h5 class="mt-2">LinkedIn</h5>
-                </a>
-            </div>
-
-            <!-- GITHUB -->
-            <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
-                <a href="https://github.com/SEU-USUARIO" target="_blank">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="70" style="filter: invert(1);">
-                    <h5 class="mt-2">GitHub</h5>
-                </a>
-            </div>
-
-        </div>
-    </div>
-</section>
 
 <!-- CONTATO -->
 <section id="contato">
