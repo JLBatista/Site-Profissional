@@ -13,18 +13,30 @@
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="css/estilo.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     
 </head>
 <body>
 
 <!-- MENU -->
 <header class="py-3 shadow-sm">
-    <nav class="d-flex justify-content-center">
-        <a href="#home">Home</a>
-        <a href="#sobre">Sobre Mim</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#experiencia">Experiência</a>
-        <a href="#contato">Contato</a>
+    <nav class="d-flex justify-content-between align-items-center container">
+
+        <!-- LOGO / NOME -->
+        <div class="nav-logo d-flex align-items-center">
+            <i class="bi bi-code-slash logo-icon"></i>
+            <span class="nome-logo">João Altafini</span>
+        </div>
+
+        <!-- LINKS DO MENU -->
+        <div>
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#contato">Contato</a>
+        </div>
+
     </nav>
 </header>
 
@@ -58,7 +70,7 @@
 
             <!-- HTML -->
             <div class="col-md-3 col-6 mb-4">
-                <div class="skill-card">
+                <div class="skill-card" data-aos="zoom-in">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="60">
                     <h5 class="mt-2 text-center">HTML5</h5>
                 </div>
@@ -66,7 +78,7 @@
 
             <!-- CSS -->
             <div class="col-md-3 col-6 mb-4">
-                <div class="skill-card">
+                <div class="skill-card" data-aos="zoom-in">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="60">
                     <h5 class="mt-2 text-center">CSS3</h5>
                 </div>
@@ -74,7 +86,7 @@
 
             <!-- PHP -->
             <div class="col-md-3 col-6 mb-4">
-                <div class="skill-card">
+                <div class="skill-card" data-aos="zoom-in">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="60">
                     <h5 class="mt-2 text-center">PHP</h5>
                 </div>
@@ -82,7 +94,7 @@
 
             <!-- MySQL -->
             <div class="col-md-3 col-6 mb-4">
-                <div class="skill-card">
+                <div class="skill-card" data-aos="zoom-in">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="60">
                     <h5 class="mt-2 text-center">MySQL</h5>
                 </div>
@@ -94,33 +106,40 @@
 
 <!-- SOBRE MIM -->
 <section id="sobre">
-    <div class="container info-card">
-        <h2 class="text-center mb-4" data-aos="fade-up">Sobre Mim</h2>
+   <div class="row mt-5 justify-content-center">
 
-        <p class="lead text-center" data-aos="fade-up">
-            Sou um desenvolvedor em formação. Buscando sempre aprender e evoluir como profissional.
-        </p>
-
-        <div class="row mt-5">
-            <div class="col-md-6" data-aos="fade-right">
-                <h4>Soft Skills</h4>
-                <ul>
-                    <li>Comunicação</li>
-                    <li>Trabalho em equipe</li>
-                    <li>Proatividade</li>
-                    <li>Organização</li>
-                </ul>
-            </div>
-
-            <div class="col-md-6" data-aos="fade-left">
-                <h4>Idiomas</h4>
-                <ul>
-                    <li>Inglês — Intermediário</li>
-                </ul>
-            </div>
+    <!-- CARD 1 — SOBRE -->
+    <div class="col-md-5 col-12 mb-4" data-aos="fade-right">
+        <div class="info-card">
+            <h4>Sobre</h4>
+            <p>
+                Atualmente sou Assistente de Licitações e estou iniciando minha trajetória na área de tecnologia. 
+                Possuo formação técnica em Desenvolvimento de Sistemas pela ETEC João Maria Stevanatto, onde adquiri 
+                base sólida em programação e lógica. 
+            </p>
+            <p>
+                Tenho maior facilidade com <strong>PHP</strong> e <strong>MySQL</strong>, além de forte interesse no desenvolvimento 
+                web como um todo. Busco constantemente evoluir minhas habilidades e conquistar minha primeira experiência 
+                profissional na área de TI.
+            </p>
         </div>
     </div>
+
+    <!-- CARD 2 — INFORMAÇÕES + IDIOMAS -->
+    <div class="col-md-5 col-12 mb-4" data-aos="fade-left">
+    <div class="info-card text-start">
+        <h4>Informações</h4>
+
+        <p><strong>Idade:</strong> 20 anos</p>
+        <p><strong>E-mail:</strong> joao.altafini05@gmail.com</p>
+        <p><strong>Celular:</strong> (19) 98361-4632</p>
+        <p><strong>Endereço:</strong> Itapira - SP</p>
+        <p><strong>Linguas:</strong> Português, Inglês (Intermediário)</p>
+    </div>
+</div>
+
 </section>
+
 
 <!-- PROJETOS -->
 <section id="projetos">
@@ -131,7 +150,7 @@
 
             <!-- Projeto 1 -->
             <div class="col-md-4 col-12 mb-4">
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <h4>Nome do Projeto 1</h4>
                     <p>Descrição breve do projeto...</p>
                     <a href="#" target="_blank">Ver projeto</a>
@@ -140,7 +159,7 @@
 
             <!-- Projeto 2 -->
             <div class="col-md-4 col-12 mb-4">
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <h4>Nome do Projeto 2</h4>
                     <p>Outra descrição curta...</p>
                     <a href="#" target="_blank">Ver projeto</a>
@@ -149,7 +168,7 @@
 
             <!-- Projeto 3 -->
             <div class="col-md-4 col-12 mb-4">
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <h4>Nome do Projeto 3</h4>
                     <p>Mais uma descrição...</p>
                     <a href="#" target="_blank">Ver projeto</a>
@@ -169,7 +188,7 @@
 
             <!-- Experiência Profissional -->
             <div class="col-md-5 col-12 mb-4">
-                <div class="info-card">
+                <div class="info-card" data-aos="fade-right">
                     <h4>Experiência Profissional</h4>
                     <p>Adicione aqui sua experiência profissional, empresa, período e responsabilidades.</p>
                 </div>
@@ -177,7 +196,7 @@
 
             <!-- Formação -->
             <div class="col-md-5 col-12 mb-4">
-                <div class="info-card">
+                <div class="info-card" data-aos="fade-left">
                     <h4>Formação</h4>
                     <p>Adicione aqui sua formação acadêmica, cursos, certificações etc.</p>
                 </div>
@@ -221,18 +240,18 @@
     <div class="container">
         <h2 class="text-center mb-4" data-aos="fade-up">Contato</h2>
 
-        <form action="enviar.php" method="POST" class="p-4 shadow rounded bg-white" data-aos="fade-up">
-            <label class="form-label">Nome:</label>
-            <input type="text" name="nome" class="form-control mb-3" required>
+        <form action="enviar.php" method="POST" class="form-card" data-aos="fade-up">
+    <label class="form-label">Nome:</label>
+    <input type="text" name="nome" class="form-control estilizado" required>
 
-            <label class="form-label">E-mail:</label>
-            <input type="email" name="email" class="form-control mb-3" required>
+    <label class="form-label">E-mail:</label>
+    <input type="email" name="email" class="form-control estilizado" required>
 
-            <label class="form-label">Mensagem:</label>
-            <textarea name="mensagem" class="form-control mb-3" required></textarea>
+    <label class="form-label">Mensagem:</label>
+    <textarea name="mensagem" class="form-control estilizado" rows="5" required></textarea>
 
-            <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
-        </form>
+    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+</form>
     </div>
 </section>
 

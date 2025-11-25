@@ -55,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #00d4ff;
+    color: #8d9a9d;
 }
 
 /* =====================================
@@ -86,7 +86,7 @@ nav a:hover {
 }
 
 .titulo-home span {
-    color: #00eaff;
+    color: #d6c1c1;
 }
 
 .subtitulo-home {
@@ -214,4 +214,92 @@ footer {
     text-align: center;
     padding: 25px;
     color: #d8e7ff;
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.4));
+}
+
+.nome-logo {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #d8e7ff;
+    transition: 0.3s;
+}
+
+.nome-logo:hover {
+    color: #31636d;
+}
+.logo-icon {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #360757;
+}
+.descricao-sobre {
+    font-size: 1.2rem;
+    color: #d8e7ff;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.sobre-box {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.sobre-box:hover {
+    transform: translateY(-5px);
+    border-color: #00d4ff;
+}
+.form-card {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.15);
+}
+
+.form-label {
+    font-weight: bold;
+    color: #d8e7ff;
+}
+
+.form-control.estilizado {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: white;
+    margin-bottom: 15px;
+}
+
+.form-control.estilizado:focus {
+    border-color: #00d4ff;
+    box-shadow: 0 0 10px #00d4ff;
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 12px;
+    background: #999da0;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background: #1b1d1d;
+    box-shadow: 0 0 15px #1c1e1e;
 }
