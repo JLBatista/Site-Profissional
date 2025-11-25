@@ -206,19 +206,56 @@
 
         <div class="row justify-content-center">
 
-            <!-- Experiência Profissional -->
-            <div class="col-md-5 col-12 mb-4">
-                <div class="info-card" data-aos="fade-right">
-                    <h4>Experiência Profissional</h4>
-                    <p>Adicione aqui sua experiência profissional, empresa, período e responsabilidades.</p>
+            <!-- CARD EXPERIÊNCIA PROFISSIONAL -->
+            <div class="col-md-6 col-12 mb-4" data-aos="fade-right">
+                <div class="info-card exp-card p-4">
+                    <h3 class="titulo-card">Experiência Profissional</h3>
+
+                    <!-- Assistente Administrativo -->
+                    <div class="mb-4">
+                        <h5 class="cargo">Assistente Administrativo — Tempo Integral - Cristália</h5>
+                        <p class="periodo">Setembro de 2024 • Atual</p>
+                        <ul class="lista-exp">
+                            <li>Recebimento e análise de empenhos, evitando duplicidades;</li>
+                            <li>Implantação e atualização de registros no sistema interno;</li>
+                            <li>Organização documental e gestão de consórcios;</li>
+                            <li>Solicitação de fichas cadastrais para novos endereços;</li>
+                            <li>Suporte direto aos representantes, com priorização de demandas e correções.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Aprendiz Administrativo -->
+                    <div>
+                        <h5 class="cargo">Aprendiz Administrativo — Meio Período - Cristália</h5>
+                        <p class="periodo">Abril de 2023 • Agosto de 2024</p>
+                        <ul class="lista-exp">
+                            <li>Digitalização e organização de documentos antigos;</li>
+                            <li>Elaboração de ofícios administrativos;</li>
+                            <li>Operação dos sistemas TOTVS e SAP para lançamentos internos;</li>
+                            <li>Registro e baixa de Notas Fiscais eletrônicas em portais de clientes.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <!-- Formação -->
-            <div class="col-md-5 col-12 mb-4">
-                <div class="info-card" data-aos="fade-left">
-                    <h4>Formação</h4>
-                    <p>Adicione aqui sua formação acadêmica, cursos, certificações etc.</p>
+            <!-- CARD FORMAÇÃO -->
+            <div class="col-md-6 col-12 mb-4" data-aos="fade-left">
+                <div class="info-card form-card p-4">
+                    <h3 class="titulo-card">Formação</h3>
+
+                    <h5 class="instituicao">Etec João Maria Stevanatto</h5>
+                    <p class="periodo">2020 – 2022</p>
+                    <p>
+                        Técnico em <strong>Desenvolvimento de Sistemas</strong>, integrado ao ensino médio.
+                        Formação focada em lógica de programação, web, banco de dados e desenvolvimento de aplicações.
+                    </p>
+
+                    <h5 class="instituicao">Fatec Dr. Ogari de Castro Pacheco</h5>
+                    <p class="periodo">2023 – 2026</p>
+                    <p>
+                        Tecnólogo em <strong>Desenvolvimento de Software Multiplataforma (DSM)</strong>, com ênfase em 
+                        soluções modernas para web e mobile, padrões de projeto, APIs, banco de dados e computação em nuvem.
+                    </p>
                 </div>
             </div>
 

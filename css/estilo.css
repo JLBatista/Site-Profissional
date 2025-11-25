@@ -271,3 +271,47 @@ footer {
     padding: 25px;
     color: #d8e7ff;
 }
+/* ===== ESTILO DOS CARDS DE EXPERIÊNCIA E FORMAÇÃO ===== */
+.exp-card, .form-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 25px;
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
+.exp-card:hover, .form-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 14px rgba(0, 212, 255, 0.4);
+    border-color: #00eaff;
+}
+
+/* Títulos chamativos e visíveis mesmo com fundo cinza */
+.titulo-card {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 0 0 6px rgba(0, 212, 255, 0.5);
+}
+
+.cargo, .instituicao {
+    color: #76eaff;
+    font-weight: bold;
+}
+
+.periodo {
+    color: #d3d3d3;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+/* Lista limpa e elegante para experiência */
+.lista-exp {
+    padding-left: 18px;
+}
+
+.lista-exp li {
+    margin-bottom: 6px;
+}
