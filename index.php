@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <title>Portfólio - João Lucas</title>
 
+
+    <link rel="icon" type="image/png" href="imagens/favicon.png"/>
+
     <!-- Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 

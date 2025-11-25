@@ -1,132 +1,278 @@
 /* =====================================
-   THEME: DARK MODERN - CLEAN PALETTE
+   PALLETA CLEAN E MODERNA
+   - Tons suaves de cinza
+   - Azul claro minimalista
 ===================================== */
-:root{
-    --text-primary: #e6e6e6;
-    --text-secondary: #c6c6c6;
-    --muted: #9fa3a6;
-    --accent: #7fbfff;       /* azul suave */
-    --accent-2: #9fd8ff;
-    --bg: linear-gradient(135deg,#0f0f10 0%, #232426 100%);
-    --card-bg: rgba(255,255,255,0.03);
-    --card-border: rgba(255,255,255,0.08);
+:root {
+    --text-primary: #c7c2c2;
+    --text-secondary: #787070;
+    --text-muted: #a8a8a8;
+
+    --accent: #8fc7ff;       /* azul suave */
+    --accent-hover: #b9dcff;
+
+    --bg-soft: rgba(255, 255, 255, 0.04);
+    --bg-card: rgba(255, 255, 255, 0.06);
+    --bg-header: rgba(255, 255, 255, 0.08);
+
+    --border-soft: rgba(255, 255, 255, 0.12);
+    --border-card: rgba(255, 255, 255, 0.15);
 }
 
-/* Base */
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-    margin:0;
-    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    color:var(--text-primary);
-    background:var(--bg);
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    scroll-behavior:smooth;
+/* =====================================
+   BODY — Fundo minimalista
+===================================== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141414, #2a2a2a);
+    background-attachment: fixed;
+    color: var(--text-primary);
+    scroll-behavior: smooth;
 }
 
-/* Header / Nav */
-header{
-    background: rgba(255,255,255,0.04);
+/* =====================================
+   NAVBAR
+===================================== */
+header {
+    background: var(--bg-header);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-soft);
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: var(--text-primary);
+    margin: 0 17px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+.logo-icon {
+    font-size: 30px;
+    color: var(--accent);
+    margin-right: 10px;
+}
+
+.nome-logo {
+    color: var(--text-primary);
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.nome-logo:hover {
+    color: var(--accent);
+}
+
+/* =====================================
+   HERO
+===================================== */
+.hero {
+    padding: 140px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.perfil-home {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 16px;
+    border: 3px solid var(--border-soft);
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.05);
+}
+
+.titulo-home span {
+    color: var(--accent);
+}
+
+.subtitulo-home {
+    color: #b4a5a5;
+}
+
+.frase-home {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* =====================================
+   SKILLS / CARDS / BOXES
+===================================== */
+.skill-card,
+.project-card,
+.info-card,
+.form-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    border-radius: 12px;
+    padding: 25px;
+    transition: 0.3s ease;
     backdrop-filter: blur(8px);
-    border-bottom:1px solid rgba(255,255,255,0.04);
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:1000;
-}
-header .container{display:flex;align-items:center;justify-content:space-between}
-.nav-logo{display:flex;align-items:center;gap:10px}
-.logo-icon{font-size:26px;color:var(--accent)}
-.nome-logo{font-weight:600;color:var(--text-primary)}
-.nav-links a{color:var(--text-secondary);margin:0 12px;text-decoration:none;font-weight:500}
-.nav-links a:hover{color:var(--accent);text-decoration:none;}
-
-/* HERO */
-.hero{padding:140px 20px 60px;min-height:80vh;display:flex;align-items:center}
-.perfil-home{
-    width:100%;max-width:420px;border-radius:14px;border:3px solid rgba(255,255,255,0.04);
-    box-shadow:0 10px 30px rgba(0,0,0,0.45);
-    object-fit:cover;
-}
-.titulo-home{font-size:2.6rem;margin-bottom:6px}
-.titulo-home span{color:var(--accent)}
-.subtitulo-home{color:var(--text-secondary);font-size:1.25rem;margin-bottom:10px}
-.frase-home{color:var(--muted);font-style:italic;max-width:680px}
-
-/* Redes - bolinhas */
-.rede-ball{
-    width:56px;height:56px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;
-    background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.04);
-    transition:all .22s ease;
-}
-.rede-ball img{width:28px;filter:invert(1);opacity:.95;transition:all .2s}
-.rede-ball:hover{transform:translateY(-6px);background:rgba(255,255,255,0.03)}
-.rede-ball.linkedin img{filter:invert(1) !important} /* força ícone branco */
-
-/* Sections general spacing (applies from Skills onward) */
-.section-block{margin-top:80px;margin-bottom:80px;padding-top:10px}
-
-/* Cards and boxes */
-.skill-card,.project-card,.info-card,.form-card{
-    background:var(--card-bg);
-    border:1px solid var(--card-border);
-    border-radius:12px;padding:22px;transition:all .25s ease;backdrop-filter:blur(6px);
-}
-.skill-card:hover,.project-card:hover,.info-card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,0,0,0.5)}
-.skill-card img{display:block;margin:0 auto}
-
-/* Icon box */
-.icon-box{
-    width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;
-    margin:0 auto 12px;color:var(--accent);font-size:28px;border:1px solid rgba(255,255,255,0.03);
-    background:rgba(255,255,255,0.01);
 }
 
-/* Project card specifics */
-.project-card h4{margin-top:0;color:var(--text-primary)}
-.project-card p{color:var(--text-secondary);line-height:1.45}
-.link-proj{display:inline-flex;align-items:center;gap:8px;color:var(--accent);text-decoration:none;font-weight:600;margin-top:10px}
-.link-proj:hover{text-decoration:underline;color:var(--accent-2)}
-
-/* Tech tags (devicon + text) */
-.tech-tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
-.tech-tags span{
-    display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.02);
-    padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,0.03);color:var(--text-primary);
-    font-size:13px;
+.skill-card:hover,
+.project-card:hover,
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
 }
-.tech-tags span i{font-size:18px;line-height:1}
 
-/* Titles and small helpers */
-h2{text-shadow:none}
-.titulo-card{color:var(--accent);font-weight:700;margin-bottom:12px}
-.cargo,.instituicao{color:var(--accent);font-weight:600}
-.periodo{color:var(--muted);font-size:.95rem;margin-bottom:8px}
-.lista-exp{padding-left:18px;color:var(--text-secondary)}
-.lista-exp li{margin-bottom:6px}
-
-/* Form */
-.form-label{color:var(--text-primary);font-weight:600}
-.form-control.estilizado{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.04);color:var(--text-primary)}
-.form-control.estilizado:focus{box-shadow:0 0 10px rgba(127,191,255,0.12);border-color:var(--accent)}
-.btn-enviar{background:var(--accent);color:#000;border:none;padding:12px 18px;border-radius:10px;font-weight:700}
-.btn-enviar:hover{background:var(--accent-2)}
-
-/* Footer */
-footer{padding:28px 0;background:rgba(255,255,255,0.02);border-top:1px solid rgba(255,255,255,0.03);text-align:center;color:var(--text-secondary)}
-
-/* Contato spacing from footer */
-#contato{margin-bottom:100px}
-
-/* Responsividade */
-@media (max-width: 992px){
-    .titulo-home{font-size:2.2rem}
-    .hero{padding:120px 18px 40px}
+/* =====================================
+   ICONES REDONDOS
+===================================== */
+.icon-box {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 1px solid var(--border-card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    font-size: 28px;
+    margin: 0 auto 15px;
+    color: var(--accent);
 }
-@media (max-width: 768px){
-    header .container{padding:0 12px}
-    .perfil-home{max-width:320px}
-    .titulo-home{font-size:1.9rem}
-    .section-block{margin-top:50px;margin-bottom:50px}
+
+/* =====================================
+   TECH TAGS (Clean)
+===================================== */
+.tech-tags span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #1c1c1c;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid #2d2d2d;
+    font-size: 12px;
+    color: var(--text-primary);
+    transition: .3s ease;
+}
+
+.tech-tags span:hover {
+    background: #262626;
+    transform: scale(1.05);
+}
+
+/* =====================================
+   FORMULÁRIO
+===================================== */
+.form-label {
+    color: var(--text-primary);
+}
+
+.form-control.estilizado {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-card);
+    color: var(--text-primary);
+}
+
+.form-control.estilizado:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+}
+
+.btn-enviar {
+    background: var(--accent);
+    color: #000;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 12px;
+    transition: 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background: var(--accent-hover);
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+footer {
+    background: var(--bg-header);
+    border-top: 1px solid var(--border-soft);
+    text-align: center;
+    padding: 25px;
+    color: var(--text-secondary);
+}
+
+/* =====================================
+   CARDS DE EXPERIÊNCIA E FORMAÇÃO
+===================================== */
+.exp-card, .form-card {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.titulo-card {
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.cargo, .instituicao {
+    color: var(--accent);
+}
+
+.periodo {
+    color: var(--text-muted);
+}
+
+/* =====================================
+   ÍCONES REDONDOS DAS REDES
+===================================== */
+.rede-ball {
+    width: 60px;
+    height: 60px;
+    background: var(--bg-soft);
+    border: 1px solid var(--border-card);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.rede-ball img {
+    width: 30px;
+    filter: invert(1);
+    opacity: 0.9;
+    transition: .3s;
+}
+
+.rede-ball:hover {
+    background: var(--bg-card);
+    transform: translateY(-5px);
+}
+
+.rede-ball:hover img {
+    opacity: 1;
+}
+
+/* =====================================
+   RESPONSIVO
+===================================== */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+    .perfil-home {
+        max-width: 300px;
+    }
+}
+#contato {
+    margin-bottom: 60px; /* aumenta o espaço entre o card e o rodapé */
+}
+section {
+    margin-top: 60px; /* espaço acima */
+    margin-bottom: 80px; /* espaço abaixo */
 }
