@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Portfólio - João Lucas</title>
+
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -10,71 +13,62 @@
     <!-- AOS (Animate On Scroll) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
-    <!-- CSS Personalizado -->
-    <link rel="stylesheet" href="css/estilo.css">
+    <!-- Devicon (ícones das tecnologias) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 
 <!-- MENU -->
 <header class="py-3 shadow-sm">
     <nav class="d-flex justify-content-between align-items-center container">
-
-        <!-- LOGO / NOME -->
         <div class="nav-logo d-flex align-items-center">
-            <i class="bi bi-code-slash logo-icon"></i>
+            <i class="bi bi-code-slash logo-icon" aria-hidden="true"></i>
             <span class="nome-logo">João Altafini</span>
         </div>
 
-        <!-- LINKS DO MENU -->
-        <div>
+        <div class="nav-links">
             <a href="#home">Home</a>
-            <a href="#sobre">Sobre Mim</a>
+            <a href="#skills">Skills</a>
+            <a href="#sobre">Sobre</a>
             <a href="#projetos">Projetos</a>
             <a href="#experiencia">Experiência</a>
             <a href="#contato">Contato</a>
         </div>
-
     </nav>
 </header>
 
-<!-- HOME -->
+<!-- HERO -->
 <section id="home" class="hero d-flex align-items-center">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center gy-4">
 
             <!-- FOTO -->
-            <div class="col-md-6 text-center" data-aos="fade-right">
-                <img src="imagens/foto-profissional.jpg" alt="Foto de Perfil" class="perfil-home">
+            <div class="col-md-6 text-center">
+                <img src="imagens/foto-profissional.jpg" alt="Foto de Perfil" class="perfil-home" data-aos="fade-right">
             </div>
 
             <!-- TEXTOS -->
-            <div class="col-md-6" data-aos="fade-left">
-                <h1 class="titulo-home">Olá! Sou <span>João Lucas</span></h1>
-                <h2 class="subtitulo-home">Futuro Desenvolvedor de Sistemas</h2>
-                <p class="frase-home">"O talento vence jogos, mas o trabalho em equipe ganha campeonatos" Michael Jordan</p>
+            <div class="col-md-6" >
+                <h1 class="titulo-home" data-aos="fade-left">Olá! Sou <span>João Lucas</span></h1>
+                <h2 class="subtitulo-home" data-aos="fade-left" data-aos-delay="120">Futuro Desenvolvedor de Sistemas</h2>
+                <p class="frase-home" data-aos="fade-left" data-aos-delay="240">
+                    "O talento vence jogos, mas o trabalho em equipe ganha campeonatos" — Michael Jordan
+                </p>
 
-                <!-- REDES EM BOLAS -->
-                <div class="d-flex gap-3 mt-3">
-
-                    <!-- LINKEDIN -->
-                    <a href="https://www.linkedin.com/in/lucas-altafini/" 
-                       target="_blank" 
-                       class="rede-ball">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
+                <!-- REDES EM BOLAS (embaixo da frase) -->
+                <div class="d-flex gap-3 mt-3" aria-hidden="false">
+                    <a href="https://www.linkedin.com/in/lucas-altafini/" target="_blank" class="rede-ball linkedin" aria-label="LinkedIn">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
                     </a>
-
-                    <!-- GITHUB -->
-                    <a href="https://github.com/JLBatista" 
-                       target="_blank" 
-                       class="rede-ball">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+                    <a href="https://github.com/JLBatista" target="_blank" class="rede-ball github" aria-label="GitHub">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
                     </a>
-
                 </div>
             </div>
 
@@ -82,231 +76,204 @@
     </div>
 </section>
 
-<!-- ESPECIALIDADES -->
-<section id="skills">
-    <div class="container mt-5">
+<!-- SKILLS (AOS ativado a partir daqui) -->
+<section id="skills" class="section-block" data-aos="fade-up">
+    <div class="container">
         <h2 class="text-center mb-4">Skills</h2>
 
         <div class="row justify-content-center">
-
-            <!-- HTML -->
             <div class="col-md-3 col-6 mb-4">
                 <div class="skill-card" data-aos="zoom-in">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="60">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="60" alt="HTML5">
                     <h5 class="mt-2 text-center">HTML5</h5>
                 </div>
             </div>
 
-            <!-- CSS -->
             <div class="col-md-3 col-6 mb-4">
-                <div class="skill-card" data-aos="zoom-in">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="60">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="60" alt="CSS3">
                     <h5 class="mt-2 text-center">CSS3</h5>
                 </div>
             </div>
 
-            <!-- PHP -->
             <div class="col-md-3 col-6 mb-4">
-                <div class="skill-card" data-aos="zoom-in">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="60">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="60" alt="PHP">
                     <h5 class="mt-2 text-center">PHP</h5>
                 </div>
             </div>
 
-            <!-- MySQL -->
             <div class="col-md-3 col-6 mb-4">
-                <div class="skill-card" data-aos="zoom-in">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="60">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="60" alt="MySQL">
                     <h5 class="mt-2 text-center">MySQL</h5>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
-<!-- SOBRE MIM -->
-<section id="sobre">
-   <div class="row mt-5 justify-content-center">
-    <h2 class="text-center mb-4">Informações complementares</h2>
+<!-- SOBRE / INFORMAÇÕES -->
+<section id="sobre" class="section-block" data-aos="fade-up">
+    <div class="container">
+        <h2 class="text-center mb-4">Informações complementares</h2>
+        <div class="row justify-content-center gy-4">
 
-    <!-- CARD 1 — SOBRE -->
-    <div class="col-md-5 col-12 mb-4" data-aos="fade-right">
-        <div class="info-card">
-            <h4>Sobre</h4>
-            <p>
-                Atualmente sou Assistente de Licitações e estou iniciando minha trajetória na área de tecnologia. 
-                Possuo formação técnica em Desenvolvimento de Sistemas pela ETEC João Maria Stevanatto, onde adquiri 
-                base sólida em programação e lógica. 
-            </p>
-            <p>
-                Tenho maior facilidade com <strong>PHP</strong> e <strong>MySQL</strong>, além de forte interesse no desenvolvimento 
-                web como um todo. Busco constantemente evoluir minhas habilidades e conquistar minha primeira experiência 
-                profissional na área de TI.
-            </p>
+            <div class="col-md-5 col-12" data-aos="fade-right">
+                <div class="info-card">
+                    <h4>Sobre</h4>
+                    <p>
+                        Atualmente trabalho como Assistente de Licitações e estou iniciando minha trajetória na área de tecnologia.
+                        Sou formado tecnicamente em Desenvolvimento de Sistemas pela ETEC João Maria Stevanatto e tenho boa base em
+                        lógica, estruturas e banco de dados.
+                    </p>
+                    <p>
+                        Tenho facilidade com <strong>PHP</strong> e <strong>MySQL</strong>, e busco oportunidades para aplicar e
+                        ampliar meus conhecimentos em desenvolvimento web.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-12" data-aos="fade-left">
+                <div class="info-card text-start">
+                    <h4>Informações</h4>
+                    <p><strong>Idade:</strong> 20 anos</p>
+                    <p><strong>E-mail:</strong> joao.altafini05@gmail.com</p>
+                    <p><strong>Celular:</strong> (19) 98361-4632</p>
+                    <p><strong>Endereço:</strong> Itapira - SP</p>
+                    <p><strong>Idiomas:</strong> Português (Nativo), Inglês (Intermediário)</p>
+                </div>
+            </div>
+
         </div>
     </div>
-
-    <!-- CARD 2 — INFORMAÇÕES + IDIOMAS -->
-    <div class="col-md-5 col-12 mb-4" data-aos="fade-left">
-    <div class="info-card text-start">
-        <h4>Informações</h4>
-
-        <p><strong>Idade:</strong> 20 anos</p>
-        <p><strong>E-mail:</strong> joao.altafini05@gmail.com</p>
-        <p><strong>Celular:</strong> (19) 98361-4632</p>
-        <p><strong>Endereço:</strong> Itapira - SP</p>
-        <p><strong>Linguas:</strong> Português, Inglês (Intermediário)</p>
-    </div>
-</div>
-
 </section>
-
 
 <!-- PROJETOS -->
-<section id="projetos">
-    <div class="row mt-4">
+<section id="projetos" class="section-block" data-aos="fade-up">
+    <div class="container">
         <h2 class="text-center mb-4">Projetos</h2>
-        <!-- Projeto 1 -->
-        <div class="col-md-4 col-12 mb-4">
-            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="icon-box">
-                    <i class="bi bi-journal-code"></i>
+        <div class="row gy-4 justify-content-center">
+
+            <!-- Projeto 1 -->
+            <div class="col-md-4 col-12">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box"><i class="bi bi-journal-code"></i></div>
+                    <h4>PI 2º Semestre — Hora+</h4>
+                    <p>Plataforma para gerenciamento e solicitação de HAEs dos docentes da FATEC.</p>
+
+                    <div class="tech-tags" aria-hidden="false">
+                        <span><i class="devicon-html5-plain colored"></i> HTML</span>
+                        <span><i class="devicon-css3-plain colored"></i> CSS</span>
+                        <span><i class="devicon-php-plain colored"></i> PHP</span>
+                        <span><i class="devicon-mysql-original colored"></i> MySQL</span>
+                    </div>
+
+                    <a href="https://github.com/JLBatista/PI-Segundo-Semestre" target="_blank" class="link-proj">
+                        Ver projeto <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
-
-                <h4>PI 2º Semestre — Hora+</h4>
-                <p>
-                    Plataforma para gerenciamento e solicitação de HAEs dos docentes da FATEC,
-                    tornando o processo mais ágil e organizado.
-                </p>
-
-                <!-- TAGS TECNOLÓGICAS -->
-                <div class="tech-tags">
-                    <span><i class="devicon-html5-plain colored"></i> HTML</span>
-                    <span><i class="devicon-css3-plain colored"></i> CSS</span>
-                    <span><i class="devicon-php-plain colored"></i> PHP</span>
-                    <span><i class="devicon-mysql-original colored"></i> MySQL</span>
-                </div>
-
-                <a href="https://github.com/JLBatista/PI-Segundo-Semestre" target="_blank">
-                    Ver projeto <i class="bi bi-arrow-right"></i>
-                </a>
             </div>
-        </div>
 
-        <!-- Projeto 2 -->
-        <div class="col-md-4 col-12 mb-4">
-            <div class="project-card" data-aos="fade-up" data-aos-delay="150">
-                <div class="icon-box">
-                    <i class="bi bi-globe-americas"></i>
+            <!-- Projeto 2 -->
+            <div class="col-md-4 col-12">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="160">
+                    <div class="icon-box"><i class="bi bi-globe-americas"></i></div>
+                    <h4>Volta ao Mundo — Marrocos</h4>
+                    <p>Site informativo sobre o Marrocos com conteúdo cultural e turístico.</p>
+
+                    <div class="tech-tags">
+                        <span><i class="devicon-html5-plain colored"></i> HTML</span>
+                        <span><i class="devicon-css3-plain colored"></i> CSS</span>
+                    </div>
+
+                    <a href="https://github.com/JLBatista/Projeto-Volta-ao-Mundo" target="_blank" class="link-proj">
+                        Ver projeto <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
-
-                <h4>Volta ao Mundo — Marrocos</h4>
-                <p>
-                    Site informativo sobre o Marrocos, com dados culturais, turísticos
-                    e curiosidades, utilizando layout moderno e responsivo.
-                </p>
-
-                <!-- TAGS TECNOLÓGICAS -->
-                <div class="tech-tags">
-                    <span><i class="devicon-html5-plain colored"></i> HTML</span>
-                    <span><i class="devicon-css3-plain colored"></i> CSS</span>
-                </div>
-
-                <a href="https://github.com/JLBatista/Projeto-Volta-ao-Mundo" target="_blank">
-                    Ver projeto <i class="bi bi-arrow-right"></i>
-                </a>
             </div>
-        </div>
 
-        <!-- Projeto 3 -->
-        <div class="col-md-4 col-12 mb-4">
-            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon-box">
-                    <i class="bi bi-water"></i>
+            <!-- Projeto 3 -->
+            <div class="col-md-4 col-12">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="220">
+                    <div class="icon-box"><i class="bi bi-water"></i></div>
+                    <h4>PI 3º Semestre — Aquasense</h4>
+                    <p>Sistema de monitoramento de rios com alertas em tempo real para risco de alagamento.</p>
+
+                    <div class="tech-tags">
+                        <span><i class="devicon-php-plain colored"></i> PHP</span>
+                        <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                        <span><i class="devicon-mysql-original colored"></i> MySQL</span>
+                        <span><i class="devicon-arduino-plain colored"></i> Arduino</span>
+                    </div>
+
+                    <a href="https://github.com/P-i-Aquasensee/PI-3-Semestre" target="_blank" class="link-proj">
+                        Ver projeto <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
-
-                <h4>PI 3º Semestre — Aquasense</h4>
-                <p>
-                    Sistema de monitoramento de rios com alertas em caso de risco de
-                    alagamento, utilizando sensores IoT e dados em tempo real.
-                </p>
-
-                <!-- TAGS TECNOLÓGICAS -->
-                <div class="tech-tags">
-                    <span><i class="devicon-php-plain colored"></i> PHP</span>
-                    <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
-                    <span><i class="devicon-mysql-original colored"></i> MySQL</span>
-                    <span><i class="devicon-arduino-plain colored"></i> Arduino</span>
-                </div>
-
-                <a href="https://github.com/P-i-Aquasensee/PI-3-Semestre" target="_blank">
-                    Ver projeto <i class="bi bi-arrow-right"></i>
-                </a>
             </div>
-        </div>
 
+        </div>
     </div>
 </section>
 
-
-
 <!-- EXPERIÊNCIA / FORMAÇÃO -->
-<section id="experiencia">
-    <div class="container mt-5">
+<section id="experiencia" class="section-block" data-aos="fade-up">
+    <div class="container">
         <h2 class="text-center mb-4">Experiência & Formação</h2>
 
-        <div class="row justify-content-center">
+        <div class="row gy-4 justify-content-center">
 
-            <!-- CARD EXPERIÊNCIA PROFISSIONAL -->
-            <div class="col-md-6 col-12 mb-4" data-aos="fade-right">
-                <div class="info-card exp-card p-4">
+            <!-- Experiência -->
+            <div class="col-md-6 col-12">
+                <div class="info-card exp-card p-4" data-aos="fade-right">
                     <h3 class="titulo-card">Experiência Profissional</h3>
 
-                    <!-- Assistente Administrativo -->
                     <div class="mb-4">
-                        <h5 class="cargo">Assistente Administrativo — Tempo Integral - Cristália</h5>
+                        <h5 class="cargo">Assistente Administrativo — Tempo Integral — Cristália</h5>
                         <p class="periodo">Setembro de 2024 • Atual</p>
+                        <p>
+                            Desempenho atividades relacionadas ao processamento e controle de empenhos:
+                        </p>
                         <ul class="lista-exp">
-                            <li>Recebimento e análise de empenhos, evitando duplicidades;</li>
+                            <li>Recebimento e conferência de empenhos, evitando duplicidades;</li>
                             <li>Implantação e atualização de registros no sistema interno;</li>
                             <li>Organização documental e gestão de consórcios;</li>
                             <li>Solicitação de fichas cadastrais para novos endereços;</li>
-                            <li>Suporte direto aos representantes, com priorização de demandas e correções.</li>
+                            <li>Suporte aos representantes, priorizando demandas e solicitando correções.</li>
                         </ul>
                     </div>
 
-                    <!-- Aprendiz Administrativo -->
                     <div>
-                        <h5 class="cargo">Aprendiz Administrativo — Meio Período - Cristália</h5>
+                        <h5 class="cargo">Aprendiz Administrativo — Meio Período — Cristália</h5>
                         <p class="periodo">Abril de 2023 • Agosto de 2024</p>
                         <ul class="lista-exp">
                             <li>Digitalização e organização de documentos antigos;</li>
-                            <li>Elaboração de ofícios administrativos;</li>
-                            <li>Operação dos sistemas TOTVS e SAP para lançamentos internos;</li>
-                            <li>Registro e baixa de Notas Fiscais eletrônicas em portais de clientes.</li>
+                            <li>Elaboração de ofícios e suportes administrativos;</li>
+                            <li>Operação dos sistemas TOTVS e SAP;</li>
+                            <li>Registro e baixa de Notas Fiscais eletrônicas.</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- CARD FORMAÇÃO -->
-            <div class="col-md-6 col-12 mb-4" data-aos="fade-left">
-                <div class="info-card form-card p-4">
+            <!-- Formação -->
+            <div class="col-md-6 col-12">
+                <div class="info-card form-card p-4" data-aos="fade-left">
                     <h3 class="titulo-card">Formação</h3>
 
                     <h5 class="instituicao">Etec João Maria Stevanatto</h5>
                     <p class="periodo">2020 – 2022</p>
                     <p>
-                        Técnico em <strong>Desenvolvimento de Sistemas</strong>, integrado ao ensino médio.
-                        Formação focada em lógica de programação, web, banco de dados e desenvolvimento de aplicações.
+                        Técnico em <strong>Desenvolvimento de Sistemas</strong> — curso integrado ao ensino médio com foco em lógica,
+                        banco de dados e desenvolvimento web.
                     </p>
 
-                    <h5 class="instituicao">Fatec Dr. Ogari de Castro Pacheco</h5>
+                    <h5 class="instituicao mt-3">Fatec Dr. Ogari de Castro Pacheco</h5>
                     <p class="periodo">2023 – 2026</p>
                     <p>
-                        Tecnólogo em <strong>Desenvolvimento de Software Multiplataforma (DSM)</strong>, com ênfase em 
-                        soluções modernas para web e mobile, padrões de projeto, APIs, banco de dados e computação em nuvem.
+                        Tecnólogo em <strong>Desenvolvimento de Software Multiplataforma (DSM)</strong> — ênfase em arquitetura, APIs,
+                        banco de dados e aplicações web/mobile.
                     </p>
                 </div>
             </div>
@@ -315,24 +282,23 @@
     </div>
 </section>
 
-
-<!-- CONTATO -->
+<!-- CONTATO (SEM AOS) -->
 <section id="contato">
     <div class="container">
-        <h2 class="text-center mb-4" data-aos="fade-up">Contato</h2>
+        <h2 class="text-center mb-4">Contato</h2>
 
-        <form action="enviar.php" method="POST" class="form-card" data-aos="fade-up">
-    <label class="form-label">Nome:</label>
-    <input type="text" name="nome" class="form-control estilizado" required>
+        <form action="enviar.php" method="POST" class="form-card mx-auto" style="max-width:720px;">
+            <label class="form-label">Nome:</label>
+            <input type="text" name="nome" class="form-control estilizado" required>
 
-    <label class="form-label">E-mail:</label>
-    <input type="email" name="email" class="form-control estilizado" required>
+            <label class="form-label mt-3">E-mail:</label>
+            <input type="email" name="email" class="form-control estilizado" required>
 
-    <label class="form-label">Mensagem:</label>
-    <textarea name="mensagem" class="form-control estilizado" rows="5" required></textarea>
+            <label class="form-label mt-3">Mensagem:</label>
+            <textarea name="mensagem" class="form-control estilizado" rows="5" required></textarea>
 
-    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
-</form>
+            <button type="submit" class="btn-enviar mt-3">Enviar Mensagem</button>
+        </form>
     </div>
 </section>
 
@@ -340,17 +306,11 @@
     <p>© 2025 - João Altafini</p>
 </footer>
 
-<!-- Bootstrap JS -->
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- AOS JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-    AOS.init({
-        duration: 1900,
-        once: true
-    });
+    AOS.init({ duration: 900, once: true, offset: 120 });
 </script>
-
 </body>
 </html>
